@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url(font/Merriweather-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(font/Gilroy-Semibold.ttf);
+}
+
+body {
+  color: #FFFFFF;
+  font-family: 'Gilroy', sans-serif;
+
+  background: #191411 url(img/main_bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.link {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #FFFFFF;
+
+  cursor: pointer;
+}
+
+.link:hover {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.button {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  cursor: pointer;
+}
+
+.button_big {
+  width: 260px;
+  height: 62px;
+
+  border-radius: 8px;
+  background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
+  color: #191411;
+}
+
+.button_big:hover {
+  background: linear-gradient(96deg, #ac6115 0%, #9e7a19 100%);
+}
+
+.button_ico {
+  width: 45px;
+  height: 45px;
+
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #FFF;
+  color: #FFFFFF;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.navigation {
+  display: flex;
+  gap: 88px;
+}
+
+.navigation>li {
+  list-style-type: none;
+}
+
+
+.promo__wrapper {
+  padding-top: 103px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.promo__tag {
+  border-radius: 100px;
+  padding: 12px 16px;
+
+  background-color: #D3320F;
+  color: #FFFFFF;
+
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  width: 137px;
+  height: 46px;
+}
+
+h1 {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 130%;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.promo__text {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.promo__info {
+  display: flex;
+  flex-direction: column;
+  max-width: 608px;
+  gap: 56px;
+}
+
+.promo__img {
+  position: absolute;
+  top: -20px;
+  left: calc(100% - 991px);
+
+  z-index: -1;
+}
