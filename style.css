@@ -26,6 +26,12 @@ body {
   background-position: top center;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -52,20 +58,29 @@ body {
   font-weight: 600;
   line-height: normal;
 
+  border-radius: 8px;
+  background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
+  color: #191411;
+
   cursor: pointer;
+}
+
+.button:hover {
+  background: linear-gradient(96deg, #ac6115 0%, #9e7a19 100%);
 }
 
 .button_big {
   width: 260px;
   height: 62px;
-
-  border-radius: 8px;
-  background: linear-gradient(96deg, #DA8023 0%, #E2B438 100%);
-  color: #191411;
 }
 
-.button_big:hover {
-  background: linear-gradient(96deg, #ac6115 0%, #9e7a19 100%);
+.button_small {
+  width: 182px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .button_ico {
@@ -149,4 +164,214 @@ h1 {
   left: calc(100% - 991px);
 
   z-index: -1;
+}
+
+
+/* section WHY */
+.why{
+  background-image: url(img/whybg.png);
+  background-position: top center;
+  background-size: initial;
+}
+
+.why__wrapper {
+  padding-bottom: 80px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.why__list {
+  display: flex;
+  gap: 100px;
+}
+
+h2 {
+  font-family: 'Merriweather', sans-serif;
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.item__img {
+  height: 100px;
+  width: 100px;
+}
+
+.item__caption {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.item__text {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+
+/* section MENU */
+
+.menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 30px;
+  width: 384px;
+  height: 564px;
+  border-radius: 16px;
+  border: 1px solid #353535;
+  background: #211A16;
+}
+
+.menu-item__caption {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.menu-item__text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.menu-item__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item__price-weight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-item__price {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.menu-item__weight {
+  color: #757575;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.button-order__img {
+
+  height: 24px;
+  width: 24px;
+}
+
+
+/* section ORDER */
+.order{
+  background-image: url(img/order_bg.png);
+  background-position: top center;
+  background-size: initial;
+}
+
+.order__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.order__img{
+  position: absolute;
+  top: -31px;
+  left: -314px;
+  z-index: -1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 40px 60px;
+  margin: 0 102px 0 auto;
+
+  border-radius: 16px;
+  border: 1px solid #353535;
+  background: #211A16;
+
+  width: 424px;
+}
+
+.form__text {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.form__item {
+  height: 62px;
+  border-radius: 8px;
+  border: 1px solid #DA8023;
+  background: #211A16;
+  color: #FFFFFF;
+}
+
+.form__item::placeholder {
+  margin-left: 10px;
+  color: #757575;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+/* FOOTER */
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 170px;
+}
+
+.low {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }

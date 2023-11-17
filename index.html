@@ -9,37 +9,117 @@
 </head>
 
 <body>
-    <header>
-      <div class="wrapper header__wrapper">
-        <object class="logo" data="img/Logo.svg" type="image/svg+xml"></object>
-        <nav>
-          <ul class="navigation">
-            <li><a class="link" href="#">Почему у нас</a></li>
-            <li><a class="link" href="#">Меню бургеров</a></li>
-            <li><a class="link" href="#">Оформление заказа</a></li>
-          </ul>
-        </nav>
-        <button class="button button_ico" title="изменить валюту">$
-        </button>
-      </div>
-    </header>
-    <main>
-      <section>
-        <div class="wrapper promo__wrapper">
-          <div class="promo__tag">Новое меню</div>
-          <div class="promo__info">
-            <h1>бургер чеддер</h1>
-            <div class="promo__text">
-              Мы обновили наше меню, спешите попробовать сезонные новинки и насладиться отличным вкусом наших бургеров.
-              Готовим для вас лучшие бургеры в городе из отборной мраморной говядины.
-            </div>
-            <button class="button button_big">Смотреть меню</button>
+  <header>
+    <div class="wrapper header__wrapper">
+      <object class="logo" data="img/Logo.svg" type="image/svg+xml"></object>
+      <nav>
+        <ul class="navigation">
+          <li><a class="link" href="#">Почему у нас</a></li>
+          <li><a class="link" href="#">Меню бургеров</a></li>
+          <li><a class="link" href="#">Оформление заказа</a></li>
+        </ul>
+      </nav>
+      <button class="button button_ico" title="изменить валюту">$
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="promo">
+      <div class="wrapper promo__wrapper">
+        <div class="promo__tag">Новое меню</div>
+        <div class="promo__info">
+          <h1>бургер чеддер</h1>
+          <div class="promo__text">
+            Мы обновили наше меню, спешите попробовать сезонные новинки и насладиться отличным вкусом наших бургеров.
+            Готовим для вас лучшие бургеры в городе из отборной мраморной говядины.
           </div>
-          <img src="img/main_burger.png" alt="burger" class="promo__img">
+          <button class="button button_big">Смотреть меню</button>
         </div>
-      </section>
-    </main>
-    <footer></footer>
+        <img src="img/main_burger.png" alt="burger" class="promo__img">
+      </div>
+    </section>
+    <section class="why">
+      <div class="wrapper why__wrapper">
+        <h2>почему нас выбирают?</h2>
+        <div class="why__list">
+          <div class="item">
+            <img class="item__img" src="img/burger.png"></img>
+            <div class="item__caption">Авторские рецепты</div>
+            <div class="item__text">Наши бургеры обладают уникальным сочетанием вкусов и не похожи ни на какие другие.
+              Мы тщательно отбираем лучшие ингредиенты и сочетания вкусов для нашего меню.</div>
+          </div>
+          <div class="item">
+            <img class="item__img" src="img/meat.png"></img>
+            <div class="item__caption">Мраморная говядина</div>
+            <div class="item__text">Для наших бургеров мы используем отборную 100% мраморную говядину, которую закупаем
+              исключительно у фермеров. Мы уверены в качестве нашего мяса. </div>
+          </div>
+          <div class="item">
+            <img class="item__img" src="img/food truck.png"></img>
+            <div class="item__caption">Быстрая доставка</div>
+            <div class="item__text">Мы доставляем в пределах МКАД за 30 минут, а если не успеем — доставка бесплатно.
+              Мы тщательно упаковываем наши бургеры, чтобы по дороге они не остыли.</div>
+          </div>
+        </div>
+    </section>
+    <section class="menu">
+      <div class="wrapper menu__wrapper">
+        <h2>выберите свой бургер</h2>
+        <div class="menu__list">
+          <div class="menu-item">
+            <img src="img/burger 1 3.png" alt="burger" class="menu-item__img">
+            <div class="menu-item__caption">Бургер чеддер & бекон</div>
+            <div class="menu-item__text">Котлета из говядины криспи, булочка, томат, сыр Чеддер, грудинка, лук красный,
+              салат айсбер, майонез, кетчуп, сырный соус</div>
+            <div class="menu-item__info">
+              <div class="menu-item__price-weight">
+                <div class="menu-item__price">8 $</div>
+                <div class="menu-item__weight">360 гр</div>
+              </div>
+              <button class="button button_small">Заказать <span class="button-order__img"></span></button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="img/burger 10 1.png" alt="burger" class="menu-item__img">
+            <div class="menu-item__caption">BBQ с беконом и курицей</div>
+            <div class="menu-item__text">Булочка бриошь с кунжутом, куриная котлета, сыр чеддер, томат, огурец
+              маринованный, лук маринованный, салат Ромен, бекон, соус BBQ</div>
+            <div class="menu-item__info">
+              <div class="menu-item__price-weight">
+                <div class="menu-item__price">7 $</div>
+                <div class="menu-item__weight">390 гр</div>
+              </div>
+              <button class="button button_small">
+                <span> Заказать</span>
+                <object class="button-order__img" data="img/shopping-card.svg" type="image/svg+xml"></object></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class="wrapper order__wrapper">
+        <h2>оформление заказа</h2>
+        <img class="order__img" src="img/order_image.png" alt="">
+        <div>
+          <div class="form">
+            <div class="form__text">Заполните все данные и наш менеджер свяжется с вами для подтверждения заказа</div>
+            <input type="text" placeholder="Ваш заказ" class="form__item form__num">
+            <input type="text" placeholder="Ваше имя" class="form__item form__name">
+            <input type="text" placeholder="Ваш телефон" class="form__item form__tel">
+            <button class="button button_big">Оформить заказ</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrapper footer__wrapper">
+      <object class="logo" data="img/Logo.svg" type="image/svg+xml"></object>
+      <div class="low">Все права защищены</div>
+    </div>
+  </footer>
 </body>
 
 </html>
